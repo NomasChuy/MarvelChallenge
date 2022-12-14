@@ -17,11 +17,11 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(private val avengersRepository: AvengersRepository)
     : ViewModel() {
 
-    private val _characterList = MutableLiveData<MarvelDomain>()
-    val characterList : LiveData<MarvelDomain>
+    private val _characterList = MutableLiveData<List<MarvelDomain>?>()
+    val characterList : LiveData<List<MarvelDomain>?>
     get() = _characterList
-    private val _error = MutableLiveData<MarvelDomain>()
-    val error : LiveData<MarvelDomain>
+    private val _error = MutableLiveData<String>()
+    val error : LiveData<String>
     get() = _error
 
     init {
@@ -32,7 +32,9 @@ class MainViewModel @Inject constructor(private val avengersRepository: Avengers
         viewModelScope.launch (Dispatchers.IO){
             try {
                 when(val result = avengersRepository.fetchAvengersComics()){
-                    is Resource.Success -> result.data.let { _characterList. }
+                    is Resource.Success -> {
+                        _characterList.postValue(result.data)
+                    }
                     is Resource.Failure -> _error.postValue(result.message?:"Error")
                 }
             }catch (ex: Exception){

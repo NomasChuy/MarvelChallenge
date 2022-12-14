@@ -1,5 +1,6 @@
 package com.example.avengerschallenge.presentation.adapters
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -15,11 +16,13 @@ class DetailAdapter : ListAdapter<MarvelDomain,DetailAdapter.MyViewHolder>(Detai
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        TODO("Not yet implemented")
+        return MyViewHolder(
+            FragmentDetailBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        )
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.onBind(marvelDomain = currentList[position])
     }
 }
 
