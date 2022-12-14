@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AvengersChallenge</string>
+    <string name="series_button">SERIES</string>
+    <string name="comics_button">COMICS</string>
+    <string name="detail_button">DETAILS</string>
+</resources>
