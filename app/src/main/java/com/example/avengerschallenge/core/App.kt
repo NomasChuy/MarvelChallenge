@@ -1,4 +1,4 @@
-package com.example.avengerschallenge
+package com.example.avengerschallenge.core
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

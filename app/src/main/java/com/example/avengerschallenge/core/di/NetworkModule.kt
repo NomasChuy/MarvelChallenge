@@ -1,7 +1,7 @@
-package com.example.avengerschallenge.di
+package com.example.avengerschallenge.core.di
 
 import com.example.avengerschallenge.BuildConfig
-import com.example.avengerschallenge.data.AvengersAPI
+import com.example.avengerschallenge.data.api.AvengersAPI
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -10,9 +10,6 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.math.BigInteger
-import java.security.MessageDigest
-import java.sql.Timestamp
 import javax.inject.Singleton
 
 @Module
