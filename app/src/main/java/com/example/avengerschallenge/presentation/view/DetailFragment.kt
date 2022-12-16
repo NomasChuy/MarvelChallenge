@@ -1,4 +1,4 @@
-package com.example.avengerschallenge.presentation.detailfragment
+package com.example.avengerschallenge.presentation.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,11 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.avengerschallenge.databinding.FragmentDetailBinding
-import com.example.avengerschallenge.databinding.FragmentMainBinding
 import com.example.avengerschallenge.domain.models.MarvelDomain
-import com.example.avengerschallenge.presentation.adapters.DetailAdapter
-import com.example.avengerschallenge.presentation.adapters.MainAdapter
-import com.example.avengerschallenge.presentation.mainfragment.MainViewModel
+import com.example.avengerschallenge.presentation.view.adapter.DetailAdapter
+import com.example.avengerschallenge.presentation.viewmodel.DetailViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
