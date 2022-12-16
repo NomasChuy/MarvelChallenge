@@ -7,7 +7,7 @@
     tools:context=".presentation.mainfragment.MainFragment" >
 
     <ImageView
-        android:id="@+id/characterRecycler"
+        android:id="@+id/ivMarvelLogo"
         android:layout_width="wrap_content"
         android:layout_height="170dp"
         android:src="@drawable/logomarvel"
@@ -18,11 +18,12 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="0dp"
+        android:id="@+id/rvCharactersList"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/characterRecycler" />
+        app:layout_constraintTop_toBottomOf="@+id/ivMarvelLogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
