@@ -1,4 +1,4 @@
-package com.example.avengerschallenge.data
+package com.example.avengerschallenge.data.api
 
 import com.example.avengerschallenge.data.models.Avengers
 import retrofit2.Response
