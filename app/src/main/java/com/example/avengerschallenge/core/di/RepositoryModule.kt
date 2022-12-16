@@ -1,7 +1,7 @@
-package com.example.avengerschallenge.di
+package com.example.avengerschallenge.core.di
 
 import com.example.avengerschallenge.data.repository.AvengersRepositoryImpl
-import com.example.avengerschallenge.domain.AvengersRepository
+import com.example.avengerschallenge.domain.repository.AvengersRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

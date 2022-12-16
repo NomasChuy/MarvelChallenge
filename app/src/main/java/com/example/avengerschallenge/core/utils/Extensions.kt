@@ -1,4 +1,4 @@
-package com.example.avengerschallenge.utils
+package com.example.avengerschallenge.core.utils
 
 import android.view.View
 import android.widget.Button
