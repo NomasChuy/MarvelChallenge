@@ -6,7 +6,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.avengerschallenge.presentation.mainfragment.MainFragment"
+        android:name="com.example.avengerschallenge.presentation.view.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.avengerschallenge.presentation.detailfragment.DetailFragment"
+        android:name="com.example.avengerschallenge.presentation.view.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <argument
