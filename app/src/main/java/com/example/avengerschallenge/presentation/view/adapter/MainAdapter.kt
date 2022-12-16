@@ -1,4 +1,4 @@
-package com.example.avengerschallenge.presentation.adapters
+package com.example.avengerschallenge.presentation.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
