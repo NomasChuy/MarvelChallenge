@@ -1,16 +1,15 @@
-package com.example.avengerschallenge.presentation.mainfragment
+package com.example.avengerschallenge.presentation.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.avengerschallenge.domain.AvengersRepository
+import com.example.avengerschallenge.domain.repository.AvengersRepository
 import com.example.avengerschallenge.domain.models.MarvelDomain
 import com.example.avengerschallenge.core.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
