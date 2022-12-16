@@ -10,6 +10,9 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.math.BigInteger
+import java.security.MessageDigest
+import java.sql.Timestamp
 import javax.inject.Singleton
 
 @Module
@@ -19,7 +22,7 @@ object NetworkModule {
     @Singleton
     fun providesOkHttpClient() : OkHttpClient =
         OkHttpClient.Builder()
-            /*.addInterceptor { chain ->
+            .addInterceptor { chain ->
                 val ts = Timestamp(System.currentTimeMillis()).time.toString()
                 val input = "$ts${BuildConfig.PRIVATE_KEY}${BuildConfig.PUBLIC_KEY}"
                 val md = MessageDigest.getInstance("MD5")
@@ -40,7 +43,7 @@ object NetworkModule {
                 val newRequest = request.newBuilder().url(newUrl).build()
 
                 chain.proceed(newRequest)
-            }*/
+            }
             .addInterceptor( HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY) )
             .build()
 
