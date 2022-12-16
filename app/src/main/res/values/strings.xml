@@ -4,4 +4,6 @@
     <string name="series_button">SERIES</string>
     <string name="comics_button">COMICS</string>
     <string name="detail_button">DETAILS</string>
+    <string name="character_image_description">Character image</string>
+    <string name="marvel_logo_description">Marvel logo</string>
 </resources>
