@@ -1,9 +1,7 @@
-package com.example.avengerschallenge.presentation.detailfragment
+package com.example.avengerschallenge.presentation.viewmodel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.avengerschallenge.domain.AvengersRepository
+import com.example.avengerschallenge.domain.repository.AvengersRepository
 import com.example.avengerschallenge.domain.models.MarvelDomain
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
