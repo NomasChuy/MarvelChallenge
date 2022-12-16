@@ -1,4 +1,4 @@
-package com.example.avengerschallenge.presentation.mainfragment
+package com.example.avengerschallenge.presentation.view
 
 import android.content.Intent
 import android.net.Uri
@@ -16,7 +16,8 @@ import com.bumptech.glide.Glide
 import com.example.avengerschallenge.R
 import com.example.avengerschallenge.databinding.FragmentMainBinding
 import com.example.avengerschallenge.domain.models.MarvelDomain
-import com.example.avengerschallenge.presentation.adapters.MainAdapter
+import com.example.avengerschallenge.presentation.view.adapter.MainAdapter
+import com.example.avengerschallenge.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
