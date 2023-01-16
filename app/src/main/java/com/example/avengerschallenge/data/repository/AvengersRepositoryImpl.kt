@@ -7,8 +7,27 @@ import com.example.avengerschallenge.domain.models.MarvelDomain
 import com.example.avengerschallenge.core.utils.Resource
 import javax.inject.Inject
 
-class AvengersRepositoryImpl @Inject constructor(private val avengersAPI: AvengersAPI) :
-    AvengersRepository {
+//class AvengersRepositoryImpl @Inject constructor(private val avengersAPI: AvengersAPI) :
+//    AvengersRepository {
+//    override suspend fun fetchAvengersComics(): Resource<List<MarvelDomain>> {
+//        return try {
+//            val response = avengersAPI.fetchAvengers()
+//            if (response.isSuccessful){
+//                val body = response.body()
+//                val result = body?.avData?.results?.map {
+//                    it.toDomainMarvel()
+//                } ?: throw Exception("Error")
+//                Resource.Success(result)
+//            }else{
+//                Resource.Failure("Error")
+//            }
+//        }catch (ex:Exception){
+//            Resource.Failure("Error")
+//        }
+//    }
+//}
+
+class KAvengersRepositoryImp(private val avengersAPI: AvengersAPI) : AvengersRepository{
     override suspend fun fetchAvengersComics(): Resource<List<MarvelDomain>> {
         return try {
             val response = avengersAPI.fetchAvengers()

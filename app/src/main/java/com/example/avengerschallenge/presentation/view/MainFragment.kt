@@ -19,12 +19,12 @@ import com.example.avengerschallenge.domain.models.MarvelDomain
 import com.example.avengerschallenge.presentation.view.adapter.MainAdapter
 import com.example.avengerschallenge.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-@AndroidEntryPoint
 class MainFragment : Fragment() {
     lateinit var mainAdapter : MainAdapter
     private lateinit var binding : FragmentMainBinding
-    private val viewModel by viewModels<MainViewModel>()
+    private val viewModel by viewModel<MainViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,

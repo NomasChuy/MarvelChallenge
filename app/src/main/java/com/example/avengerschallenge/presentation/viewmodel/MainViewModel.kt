@@ -13,8 +13,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-@HiltViewModel
-class MainViewModel @Inject constructor(private val avengersRepository: AvengersRepository): ViewModel() {
+class MainViewModel (private val avengersRepository: AvengersRepository) : ViewModel() {
     private val _characterList = MutableLiveData<List<MarvelDomain>?>()
     val characterList : LiveData<List<MarvelDomain>?>
     get() = _characterList

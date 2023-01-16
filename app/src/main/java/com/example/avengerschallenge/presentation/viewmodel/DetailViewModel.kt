@@ -6,8 +6,8 @@ import com.example.avengerschallenge.domain.models.MarvelDomain
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
-@HiltViewModel
-class DetailViewModel @Inject constructor(private val avengersRepository: AvengersRepository) : ViewModel() {
+
+class DetailViewModel : ViewModel() {
     var viewTitle: String = ""
     lateinit var viewCharacter: MarvelDomain
     var viewDetailList: List<String> = emptyList()

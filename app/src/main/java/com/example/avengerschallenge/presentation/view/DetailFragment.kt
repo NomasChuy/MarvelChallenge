@@ -12,12 +12,12 @@ import com.example.avengerschallenge.domain.models.MarvelDomain
 import com.example.avengerschallenge.presentation.view.adapter.DetailAdapter
 import com.example.avengerschallenge.presentation.viewmodel.DetailViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-@AndroidEntryPoint
 class DetailFragment : Fragment() {
     lateinit var detailAdapter : DetailAdapter
     private lateinit var binding : FragmentDetailBinding
-    private val viewModel by viewModels<DetailViewModel>()
+    private val viewModel by viewModel<DetailViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
